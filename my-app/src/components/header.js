@@ -1,3 +1,4 @@
+import logo from '../logo.svg';
 import { useState, useRef } from "react";
 import { useOnHoverOutside } from "./../hooks/useOnHoverOutside";
 import Menu from "./menu";
@@ -28,7 +29,7 @@ export function Header() {
               Hover Menu
             </button>
 
-            {isMenuDropDownOpen && <Menu />} // Dropdown
+            {isMenuDropDownOpen && <Menu />}
           </div>
         </div>
         <div class="flex items-center font-bold mobile:hidden">
