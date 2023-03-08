@@ -1,6 +1,12 @@
+import './index.css';
+import Products from './components/products';
+
 const Store = () => {
     return ( 
-        <h1>Store</h1>
+        <div className='container'>
+            {/* <h1 className='title'>Store</h1> */}
+            <Products />
+        </div>
      );
 }
  

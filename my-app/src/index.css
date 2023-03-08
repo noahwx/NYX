@@ -5,14 +5,16 @@
   margin: 0;
   font-family: "articulat-cf", sans-serif;
   font-style: normal;
-
-  background-color: #FDFFFC;
 }
 
 .Nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  z-index: 99;
+  background-color: #FDFFFC;
+  box-shadow: 0.2px 0.2px 5px #161925;
 }
 
 .logo {
@@ -36,8 +38,9 @@
 .dropdown-menu {
   position: absolute;
   right: 14.2vw;
+  top: 7vh;
   width: 100px;
-  text-align: left;
+  text-align: center;
 
   animation: slideIn 250ms linear;
 }
@@ -81,6 +84,124 @@
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.images {
+  position: relative;
+  z-index: 0;
+}
+
+.img {
+  position: relative;
+  z-index: 0;
+  width: 50%;
+  transition: transform 250ms ease;
+  box-shadow: 1px 1px 5px #161925;
+}
+
+.one {
+  transform: rotate(45deg);
+  animation: appear1 1s linear;
+}
+
+.two {
+  transform: rotate(-45deg);
+  animation: appear2 1s linear;
+}
+
+.three {
+  transform: rotate(45deg);
+  animation: appear1 1s linear;
+}
+
+.img:hover {
+  transform: scale(1.25);
+  z-index: 1;
+}
+
+@keyframes appear1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(45deg);
+  }
+} 
+
+@keyframes appear2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(-45deg);
+  }
+} 
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100vw;
+  position: relative;
+  margin-top: 2vh;
+  overflow: hidden;
+}
+
+.products {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.product {
+  position: relative;
+  margin-left: 8vw;
+  float: left;
+  padding: 1em;
+
+  transition: transform 250ms ease;
+  animation: slideIn2 500ms linear;
+}
+
+.productinfo {
+  position: absolute;
+  top: 45vh;
+  left: -50%;
+  right: -50%;
+  z-index: 1;
+}
+
+.producttitle {
+  color: #FDFFFC;
+}
+
+.productprice {
+  color: #FDFFFC;
+}
+
+.productimg {
+  position: relative;
+  z-index: 0;
+  width: 20em;
+}
+
+.product:hover {
+  transform: scale(1.10);
+}
+
+@keyframes slideIn2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }

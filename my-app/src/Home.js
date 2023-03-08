@@ -1,6 +1,12 @@
+import React from 'react';
+import Slide from './components/imageSlide';
+
 const Home = () => {
     return ( 
-        <h1>Home</h1>
+        <div className="container">
+            {/* <h1>Home</h1> */}
+            <Slide />
+        </div>
      );
 }
  
