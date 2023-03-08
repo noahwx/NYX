@@ -1,10 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 export default function Menu() {
     return (
         <>
             <div className="dropdown-menu">
-                <a href>Item 1</a>
-                <a href>Item 2</a>
-                <a href>Item 3</a>
+                <NavLink to='/Account/SignIn' className='dropdownItem'>Sign In</NavLink>
+                <NavLink to='/Account/Register' className='dropdownItem'>Register</NavLink>
             </div>
         </>
     )
