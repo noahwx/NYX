@@ -11,6 +11,15 @@
   position: relative;
   text-align: center;
   font-size: clamp(3rem, 6vw, 3rem);
+  color: #161925;
+}
+
+.subtitle {
+  position: relative;
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1rem);
+  letter-spacing: 0.2em;
+  color: #D64045;
 }
 
 .Nav {
@@ -18,6 +27,7 @@
   justify-content: space-around;
   align-items: center;
   position: relative;
+  height: 10vh;
   z-index: 99;
   background-color: #FDFFFC;
   box-shadow: 0.2px 0.2px 5px #161925;
@@ -44,7 +54,7 @@
 .dropdown-menu {
   position: absolute;
   right: 14.2vw;
-  top: 7vh;
+  top: 6vh;
   width: 100px;
   text-align: center;
 
@@ -59,7 +69,7 @@
 }
 
 .navItem.active {
-  color: #FFD400;
+  color: #D64045;
 }
 
 .navItems:hover > .navItem {
@@ -80,7 +90,7 @@
 }
 
 .dropdownItem:hover {
-  color: #FFD400;
+  color: #D64045;
 }
 
 @keyframes slideIn {
@@ -287,3 +297,107 @@
   box-shadow: 1px 2px 5px #161925;
 }
 
+.content {
+  display: flex;
+  justify-self: center;
+  margin: 0 auto;
+  margin-top: 2vh;
+  height: 25vh;
+  width: 70vw;
+  text-overflow: "";
+  overflow-x: scroll;
+  font-size: clamp(1rem, 2vw, 1rem);
+  font-weight: 300;
+  border-bottom: 2px dashed #161925;
+  text-align: center;
+}
+
+.contactcontainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2vh;
+  height: 50vh;
+  width: 70vw;
+}
+
+.contactform {
+  position: fixed;
+  top: 25vh;
+  height: 60vh;
+  width: 25vw;
+  border: 2px dashed #161925;
+  border-radius: 25px;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2vh;
+  font-size: clamp(1rem, 2vw, 1rem);
+  font-weight: 500;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1vh;
+  width: 20vw;
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid #161925;
+  padding: 1em;
+  text-align: left;
+  font-size: clamp(1rem, 2vw, 1rem);
+  transition: border-color 250ms ease;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1vh;
+  height: 15vh;
+  width: 20vw;
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid #161925;
+  padding: 1em;
+  text-align: left;
+  font-size: clamp(1rem, 2vw, 1rem);
+  resize: none;
+  overflow-y: scroll;
+  transition: border-color 250ms ease;
+}
+
+.formbtn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1.5vh;
+  height: 2em;
+  width: 5em;
+  padding: 0;
+  font-size: clamp(1rem, 2vw, 1rem);
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid #161925;
+  background: none;
+  transition: border 250ms ease, transform 300ms ease, color 250ms ease;
+}
+
+.input:hover {
+  border-color: #D64045;
+}
+
+.message:hover {
+  border-color: #D64045;
+}
+
+.formbtn:hover {
+  border: 2px solid #D64045;
+  color: #D64045;
+  transform: scale(1.05);
+}

@@ -1,6 +1,11 @@
+import Form from './components/contactForm';
+
 const Contact = () => {
     return ( 
-        <h1>Contact</h1>
+        <div className="contactcontainer">
+            <h1 className="title">Contact Us</h1>
+            <Form />
+        </div>
      );
 }
  
