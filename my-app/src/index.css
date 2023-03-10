@@ -506,11 +506,11 @@
  .switch {
   position: relative;
   position: absolute;
-  top: 7vh;
+  top: 7.5vh;
   right: 3vw;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 52px;
+  height: 25px;
 }
 
 /* Hide default HTML checkbox */
@@ -529,28 +529,28 @@
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 17px;
+  width: 17px;
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #D64045;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #D64045;
 }
 
 input:checked + .slider:before {
@@ -582,6 +582,11 @@ input:checked + .slider:before {
   color: #161925;
   text-decoration: none;
   font-size: clamp(1rem, 2vw, 1rem);
+}
+
+.category_title:hover{
+  color: #D64045;
+  text-decoration: underline;
 }
 
 .product_wrapper{
