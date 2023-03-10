@@ -628,6 +628,7 @@ input:checked + .slider:before {
   color: #D64045;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-top: 0.2vh;
 }
 
 .product_name{
