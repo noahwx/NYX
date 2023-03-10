@@ -178,100 +178,68 @@
   overflow: hidden;
 }
 
-.products {
+.product-wrapper{
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  margin-top: 2vh;
+  margin-top: 4vh;
   height: auto;
   width: 70vw;
 }
 
-.rows {
-  display: inline-block;
-  margin-left: 7vw;
-}
-
 .row1 {
-  height: 28vh;
-  width: 70vw;
-  margin-bottom: 1vh;
+  position: relative;
+  float: left;
 }
 
 .row2 {
-  height: 28vh;
-  width: 70vw;
-  margin-bottom: 1vh;
-}
-
-.row3 {
-  height: 28vh;
-  width: 70vw;
-}
-
-.product {
   position: relative;
   float: left;
-  z-index: 0;
-  margin-left: 2.5vw;
-  height: 28vh;
-  width: auto;
-  overflow: hidden;
-
-  transition: transform 250ms ease, filter 250ms ease, box-shadow 250ms ease;
-  animation: steps 500ms linear;
 }
 
-.productimg {
+.products {
+  overflow: scroll;
+}
+
+.productimg{
   position: relative;
-  z-index: 0;
-  max-width:100%;
-  max-height:100%;
-  margin: auto;
-  display: block;
+  float: left;
+  padding: 0.5em;
+  margin-left: 6vw;
+  width: 20%;
 }
 
 .productinfo {
-  position: absolute;
-  right: 0; 
-  bottom: 5vh;
+  position: relative;
+  float: left;
+  width: 25px;
   z-index: 99;
-  text-align: center;
-  background-color: rgba(22, 25, 37, 0.3);
-  width: 7vw;
 }
 
 .productname {
-  font-size: clamp(1.2rem, 2vw, 1.2rem);
+  position: absolute;
+  top: 24vh;
+  left: 7vw;
   color: #D64045;
-  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 2rem);
+  font-weight: 600;
 }
 
 .productprice {
-  font-size: clamp(1rem, 2vw, 1rem);
-  color: #FDFFFC;
+  position: absolute;
+  top: 80vh;
+  left: 20vw;
+  color: #D64045;
+  font-size: clamp(1.2rem, 2vw, 1.2rem);
   font-weight: 200;
-  margin-bottom: 1vh;
 }
 
-.rows:hover > .product {
-  filter: grayscale(1);
-}
-
-.rows:hover > .product:hover {
-  filter: grayscale(0);
-  transform: scale(1.5);
-  z-index: 99;
-  box-shadow: 1px 1px 5px #161925;
-}
-
-@keyframes steps {
-  0%  {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.productprice {
+  position: absolute;
+  top: 35vh;
+  left: 7vw;
+  color: #D64045;
+  font-size: clamp(1.2rem, 2vw, 1.2rem);
+  font-weight: 200;
 }
 
 .acctinfo {
@@ -457,6 +425,7 @@
   display:flex;
   align-items:center;
   justify-content:center;
+  animation: appear3 1s linear;
 }
 
 .cards-container{
@@ -546,4 +515,13 @@
 .card:hover .pp-image{
   transform: perspective(1000px) rotateY(10deg) translateX(0px) scale(0.96);
   box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes appear3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
