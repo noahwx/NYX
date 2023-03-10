@@ -4,7 +4,6 @@ import Slide from './components/imageSlide';
 const Home = () => {
     return ( 
         <div className="container">
-            {/* <h1>Home</h1> */}
             <Slide />
         </div>
      );
