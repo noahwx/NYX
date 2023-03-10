@@ -8,7 +8,7 @@ const Hoodie = () => {
                     </div>
                     <div class="info">
                         <h2 className="pp-name">Classic Hoodie</h2>
-                        <p className="pp-price">$150.00</p>
+                        <p className="pp-price">$140.00</p>
                         <button className="ppbtn">Add to Cart</button>
                     </div>
                 </div>

@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
+  position: sticky;
   height: 10vh;
   z-index: 99;
   background-color: #FDFFFC;
@@ -105,6 +105,10 @@
   }
 }
 
+.aboutcontainer{
+  animation: appear3 500ms linear;
+}
+
 .images {
   position: relative;
   z-index: 0;
@@ -176,70 +180,6 @@
   width: 100vw;
   position: relative;
   overflow: hidden;
-}
-
-.product-wrapper{
-  display: flex;
-  justify-content: center;
-  margin-top: 4vh;
-  height: auto;
-  width: 70vw;
-}
-
-.row1 {
-  position: relative;
-  float: left;
-}
-
-.row2 {
-  position: relative;
-  float: left;
-}
-
-.products {
-  overflow: scroll;
-}
-
-.productimg{
-  position: relative;
-  float: left;
-  padding: 0.5em;
-  margin-left: 6vw;
-  width: 20%;
-}
-
-.productinfo {
-  position: relative;
-  float: left;
-  width: 25px;
-  z-index: 99;
-}
-
-.productname {
-  position: absolute;
-  top: 24vh;
-  left: 7vw;
-  color: #D64045;
-  font-size: clamp(2rem, 4vw, 2rem);
-  font-weight: 600;
-}
-
-.productprice {
-  position: absolute;
-  top: 80vh;
-  left: 20vw;
-  color: #D64045;
-  font-size: clamp(1.2rem, 2vw, 1.2rem);
-  font-weight: 200;
-}
-
-.productprice {
-  position: absolute;
-  top: 35vh;
-  left: 7vw;
-  color: #D64045;
-  font-size: clamp(1.2rem, 2vw, 1.2rem);
-  font-weight: 200;
 }
 
 .acctinfo {
@@ -332,6 +272,7 @@
   margin-top: 2vh;
   height: 50vh;
   width: 70vw;
+  animation: appear3 500ms linear;
 }
 
 .contactform {
@@ -524,4 +465,208 @@
   100% {
     opacity: 1;
   }
+}
+
+.store_container{
+  position: relative;
+  margin-top: 5vh;
+  height: 100vh;
+  width: 80vw;
+  overflow-y: scroll;
+  overflow-x: none;
+  animation: appear3 500ms linear;
+}
+
+.filter{
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 16vw;
+}
+
+.filter_title{
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2rem);
+  font-weight: 600;
+  color: #161925;
+}
+
+.isb_title{
+  text-align: left;
+  margin-left: 2.7vh;
+  font-size: clamp(1rem, 2vw, 1rem);
+  color: #161925;
+  font-weight: 600;
+  position: absolute;
+  top: 7.4vh;
+  left: 1vw;
+}
+
+ /* The switch - the box around the slider */
+ .switch {
+  position: relative;
+  position: absolute;
+  top: 7vh;
+  right: 3vw;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+
+.filters {
+  position: absolute;
+  top: 12vh;
+  left: 1.5vw;
+}
+
+.category_link{
+  text-decoration: none;
+}
+
+.category_title{
+  color: #161925;
+  text-decoration: none;
+  font-size: clamp(1rem, 2vw, 1rem);
+}
+
+.product_wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 0.2fr);
+  grid-auto-rows: 400px;
+  align-items: center;
+  position: relative;
+  left: 19vw;
+  height: auto;
+  width: 60vw;
+}
+
+.product_card{
+  height: 30vh;
+  width: auto;
+  margin-top: 2vh;
+  margin-left: 1.3vw;
+  overflow: hidden;
+}
+
+.product_card img{
+  transition: all 2s ease;
+}
+
+.product_image{
+  position: relative;
+  z-index: 0;
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product_info{
+  position: absolute;
+  margin-top: 30vh;
+  z-index: 99;
+  height: 10vh;
+  width: 10.7vw;
+}
+
+.new_product{
+  font-size: clamp(1rem, 2vw, 1rem);
+  color: #D64045;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.product_name{
+  font-size: clamp(1.3rem, 2vw, 1.3rem);
+  color: #161925;
+  text-align: left;
+  font-weight: 500;
+}
+
+.product_price{
+  font-size: clamp(1.2rem, 2vw, 1.2rem);
+  color: #161925;
+  text-align: left;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.product_gender{
+  font-size: clamp(0.9rem, 2vw, 0.9rem);
+  color: #161925;
+  text-align: left;
+  font-weight: 200;
+}
+
+.product_colors{
+  font-size: clamp(0.9rem, 2vw, 0.9rem);
+  color: #161925;
+  text-align: left;
+  font-weight: 200;
+}
+
+.product_card:hover img{
+  transform: scale(1.2);
+}
+
+.product_card:hover{
+  box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product_card:hover .product_price{
+  color: #D64045;
 }
