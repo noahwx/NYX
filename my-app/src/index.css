@@ -356,19 +356,22 @@
   transform: scale(1.05);
 }
 
-.about_images {
+.about_images{
   display: flex;
   justify-content: center;
   margin: 0 auto;
   margin-top: 2vh;
-  height: 45vh;
   width: 70vw;
+  height: 45vh;
   overflow: hidden;
 }
 
-.about_img img{
-  width: 50%;
-  
+.aboutimg {
+  padding: 1em;
+}
+
+.aboutimg img{
+  max-width: 100%;
 }
 
 :root{
@@ -515,7 +518,13 @@
   font-weight: 600;
   position: absolute;
   top: 7.4vh;
-  left: 1vw;
+  left: 0;
+}
+
+.filters{
+  padding: 0.3em;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
  /* The switch - the box around the slider */
@@ -523,7 +532,7 @@
   position: relative;
   position: absolute;
   top: 7.5vh;
-  right: 3vw;
+  left: 9vw;
   display: inline-block;
   width: 52px;
   height: 25px;
@@ -583,6 +592,12 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 } 
+
+.collapsible_filter {
+  position: absolute;
+  top: 35vh;
+  left: 1.5vw;
+}
 
 .filters {
   position: absolute;
@@ -692,3 +707,4 @@ input:checked + .slider:before {
 .product_card:hover .product_price{
   color: #D64045;
 }
+
