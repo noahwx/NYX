@@ -1,3 +1,4 @@
+import '../index.css';
 import { NavLink } from "react-router-dom";
 import Collapse from './collapsible';
 
@@ -20,7 +21,7 @@ const filter = () => {
                     </NavLink>
                 </div>
                 <div className='category'>
-                    <NavLink to='/Store' className='category_link'>
+                    <NavLink to='/Product/products_hoodie_sweatshirts' className='category_link'>
                         <h2 className='category_title'>Hoodies & Sweaters</h2>
                     </NavLink>
                 </div>
@@ -35,7 +36,7 @@ const filter = () => {
                     </NavLink>
                 </div>
                 <div className='category'>
-                    <NavLink to='/Store' className='category_link'>
+                    <NavLink to='/Product/products_jackets' className='category_link'>
                         <h2 className='category_title'>Jackets</h2>
                     </NavLink>
                 </div>

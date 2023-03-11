@@ -496,6 +496,13 @@
   animation: appear3 500ms linear;
 }
 
+.display1{
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 5vh;
+}
+
 .filter{
   position: absolute;
   left: 0;
@@ -530,12 +537,17 @@
  /* The switch - the box around the slider */
  .switch {
   position: absolute;
-  top: 7.4vh;
+  top: 5vh;
   left: 9vw;
   display: inline-block;
   width: 52px;
   height: 25px;
 }
+
+.switch:not(:root:root){ 
+  top: 7.2vh;
+}
+
 
 /* Hide default HTML checkbox */
 .switch input {
@@ -611,6 +623,16 @@ input:checked + .slider:before {
 .category_title:hover{
   color: #D64045;
   text-decoration: underline;
+}
+
+.product_page_title{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  margin: 0 auto;
+  width: 500px;
+  font-weight: 300;
 }
 
 .product_wrapper{
@@ -705,8 +727,9 @@ input[type=checkbox] {
   accent-color: #D64045;
   position: relative;
   padding: 10px;
-  transform: scale(1.5);
+  transform: scale(1.2);
   cursor: pointer;
+  border: 1px solid #ccc;
 }
 
 .collapse_label {
