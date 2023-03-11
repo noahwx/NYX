@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Collapse from './collapsible';
 
 const filter = () => {
 
@@ -49,7 +50,7 @@ const filter = () => {
                     </NavLink>
                 </div>
             </div>
-
+            <Collapse />
         </div>
      );
 }
