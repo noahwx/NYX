@@ -9,7 +9,7 @@ const ProductGrid = () => {
     const menuItems = [...new Set(Data.map((Product) => Product.product_category))];
     const menuItems2 = [...new Set(Data.map((Product) => Product.product_size))];
     const menuItems3 = [...new Set(Data.map((Product) => Product.product_color))];
-    const menuItems4 = [...new Set(Data.map((Product) => Product.product_price))];
+    const menuItems4 = [...new Set(Data.map((Product) => Product.product_price_sort))];
     const menuItems5 = [...new Set(Data.map((Product) => Product.product_sex))];
 
     const filterItem = (curcat) => {
@@ -35,7 +35,7 @@ const ProductGrid = () => {
 
     const filterItem4 = (curcat) => {
         const newItem = Data.filter((newProduct) => {
-          return newProduct.product_price === curcat;
+          return newProduct.product_price_sort === curcat;
         });
         setItem(newItem);
     };

@@ -8,6 +8,7 @@ import Store from './Store';
 import SignIn from './Account/SignIn';
 import Register from './Account/Register';
 import ProductPage from './components/productpage';
+import Cart from './Cart';
 
 const Main = () => {
     return ( 
@@ -20,6 +21,7 @@ const Main = () => {
             <Route exact path='/Account/SignIn' element={<SignIn />} />
             <Route exact path='/Account/Register' element={<Register />} />
             <Route path="/products/:productId" element={<ProductPage />}/>
+            <Route exact path='/Cart' element={<Cart />} />
         </Routes>
      );
 }

@@ -1,5 +1,17 @@
 const data = [
     {
+        product_id: '14',
+        product_category: 'Accessories',
+        product_name: 'Everday Beanie',
+        product_price: '$25.00',
+        product_img: 'https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+        product_status: '',
+        product_size: 'O/S',
+        product_color: 'Yellow',
+        product_sex: 'Unisex',
+        product_price_sort: 'Under $100'
+    },
+    {
         product_id: '1',
         product_category: 'Hoodies & T-Shirts',
         product_name: 'Classic Hoodie',
@@ -8,7 +20,8 @@ const data = [
         product_status: 'Just In',
         product_size: 'XL',
         product_color: 'White',
-        product_sex: 'Unisex'
+        product_sex: 'Unisex',
+        product_price_sort: '$100.00 to $150.00'
     },
     {
         product_id: '2',
@@ -19,7 +32,8 @@ const data = [
         product_status: '',
         product_size: 'L',
         product_color: 'Black',
-        product_sex: 'Unisex'
+        product_sex: 'Unisex',
+        product_price_sort: '$100.00 to $150.00'
     },
     {
         product_id: '3',
@@ -30,7 +44,8 @@ const data = [
         product_status: 'Just In',
         product_size: 'L',
         product_color: 'Black',
-        product_sex: 'Unisex'
+        product_sex: 'Unisex',
+        product_price_sort: '$100.00 to $150.00'
     },
     {
         product_id: '4',
@@ -41,7 +56,8 @@ const data = [
         product_status: 'On Sale',
         product_size: 'L',
         product_color: 'White',
-        product_sex: 'Male'
+        product_sex: 'Male',
+        product_price_sort: '$100.00 to $150.00'
     },
     {
         product_id: '5',
@@ -52,7 +68,8 @@ const data = [
         product_status: '',
         product_size: 'S',
         product_color: 'White',
-        product_sex: 'Unisex'
+        product_sex: 'Unisex',
+        product_price_sort: '$100.00 to $150.00'
     },
     {
         product_id: '6',
@@ -63,7 +80,8 @@ const data = [
         product_status: 'Just In',
         product_size: 'XL',
         product_color: 'Red',
-        product_sex: 'Unisex'
+        product_sex: 'Unisex',
+        product_price_sort: '$100.00 to $150.00'
     },
     {
         product_id: '7',
@@ -74,7 +92,8 @@ const data = [
         product_status: '',
         product_size: 'S',
         product_color: 'Black',
-        product_sex: 'Female'
+        product_sex: 'Female',
+        product_price_sort: '$100.00 to $150.00'
     },
     {
         product_id: '8',
@@ -85,7 +104,8 @@ const data = [
         product_status: '',
         product_size: 'XL',
         product_color: 'Green',
-        product_sex: 'Unisex'
+        product_sex: 'Unisex',
+        product_price_sort: '$100.00 to $150.00'
     },
     {
         product_id: '9',
@@ -96,7 +116,8 @@ const data = [
         product_status: '',
         product_size: 'M',
         product_color: 'Pink',
-        product_sex: 'Unisex'
+        product_sex: 'Unisex',
+        product_price_sort: '$100.00 to $150.00'
     },
     {
         product_id: '10',
@@ -107,7 +128,8 @@ const data = [
         product_status: '',
         product_size: 'L',
         product_color: 'Green',
-        product_sex: 'Female'
+        product_sex: 'Female',
+        product_price_sort: 'Over $150.00'
     },
     {
         product_id: '11',
@@ -118,7 +140,8 @@ const data = [
         product_status: '',
         product_size: 'M',
         product_color: 'White',
-        product_sex: 'Male'
+        product_sex: 'Male',
+        product_price_sort: 'Over $150.00'
     },
     {
         product_id: '12',
@@ -129,7 +152,8 @@ const data = [
         product_status: '',
         product_size: 'S',
         product_color: 'Blue',
-        product_sex: 'Female'
+        product_sex: 'Female',
+        product_price_sort: '$100.00 to $150.00'
     },
     {
         product_id: '13',
@@ -140,18 +164,8 @@ const data = [
         product_status: '',
         product_size: '32',
         product_color: 'Blue',
-        product_sex: 'Male'
-    },
-    {
-        product_id: '14',
-        product_category: 'Accessories',
-        product_name: 'Everday Beanie',
-        product_price: '$25.00',
-        product_img: 'https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
-        product_status: '',
-        product_size: 'O/S',
-        product_color: 'Yellow',
-        product_sex: 'Unisex'
+        product_sex: 'Male',
+        product_price_sort: '$100.00 to $150.00'
     },
 ]
 
