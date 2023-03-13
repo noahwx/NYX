@@ -20,9 +20,10 @@ export function Header() {
         <NavLink to='/' onMouseOver={() => setMenuDropDownOpen(false)}><img src={logo} alt='' className='logo'/></NavLink>
         <div className='navItems' ref={dropdownRef}>
             <NavLink to='/AboutUs' className='navItem' onMouseOver={() => setMenuDropDownOpen(false)}>About Us</NavLink>
-            <NavLink to='./Store' className='navItem' onMouseOver={() => setMenuDropDownOpen(false)}>Store</NavLink>
+            <NavLink to='/Store' className='navItem' onMouseOver={() => setMenuDropDownOpen(false)}>Store</NavLink>
             <NavLink to='/Contact' className='navItem' onMouseOver={() => setMenuDropDownOpen(false)}>Contact</NavLink>
             <NavLink to='/Account' className='navItem' onMouseOver={() => setMenuDropDownOpen(true)}>Account</NavLink>
+            <NavLink to='/Cart' className='navItem' onMouseOver={() => setMenuDropDownOpen(false)}>Cart</NavLink>
 
             {isMenuDropDownOpen && <Menu />}
         </div>

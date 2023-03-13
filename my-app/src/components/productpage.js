@@ -1,11 +1,13 @@
-import React from "react"
-import { useParams } from "react-router-dom"
-import productsData from "./productdata"
+import React from "react";
+import { useParams } from "react-router-dom";
+import productsData from "./productdata";
 
 function ProductDetail() {
-    const {productId} = useParams()
-    const thisProduct = productsData.find(prod => prod.product_id === productId)
+    const {productId} = useParams();
+    const thisProduct = productsData.find(prod => prod.product_id === productId);
+
     
+
     return (
         <div class="wrapper">
             <div class="cards-container">
