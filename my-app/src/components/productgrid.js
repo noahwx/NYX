@@ -10,6 +10,7 @@ const ProductGrid = () => {
     const menuItems2 = [...new Set(Data.map((Product) => Product.product_size))];
     const menuItems3 = [...new Set(Data.map((Product) => Product.product_color))];
     const menuItems4 = [...new Set(Data.map((Product) => Product.product_price))];
+    const menuItems5 = [...new Set(Data.map((Product) => Product.product_sex))];
 
     const filterItem = (curcat) => {
         const newItem = Data.filter((newProduct) => {
@@ -39,6 +40,13 @@ const ProductGrid = () => {
         setItem(newItem);
     };
 
+    const filterItem5 = (curcat) => {
+        const newItem = Data.filter((newProduct) => {
+          return newProduct.product_sex === curcat;
+        });
+        setItem(newItem);
+    };
+
     return (
         <>
             <div className="productgrid">
@@ -56,7 +64,11 @@ const ProductGrid = () => {
                 </div>
                 <div className="filter_section">
                     <h4 className="filter_title">Price</h4>
-                    <Buttons filterItem={filterItem4} setItem={setItem} menuItems={menuItems4}/>
+                    <Buttons filterItem={filterItem4} setItem={setItem} menuItems={menuItems4} className='filter_pricebtn'/>
+                </div>
+                <div className="filter_section">
+                    <h4 className="filter_title">Price</h4>
+                    <Buttons filterItem={filterItem5} setItem={setItem} menuItems={menuItems5}/>
                 </div>
                 <div>
                     <Card item={item}/>

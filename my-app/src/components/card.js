@@ -9,7 +9,7 @@ const Card = ({ item }) => {
                 <div className="store_card">
                     {item.map((Product) => {
                         return (
-                            <NavLink to={Product.product_page}>
+                            <NavLink to={`/products/${Product.product_id}`}>
                                 <div key={Product.product_id} className='product_card'>
                                     <div className="card_main">
                                         <div className="card_img">
@@ -22,8 +22,11 @@ const Card = ({ item }) => {
                                             <div className="product_name">
                                                 {Product.product_name} &nbsp;
                                             </div>
+                                            <div className="product_color">
+                                                {Product.product_color} / {Product.product_sex} / {Product.product_size}
+                                            </div>
                                             <div className="product_price">
-                                                {Product.product_price} &nbsp;
+                                                {Product.product_price} &nbsp; 
                                             </div>
                                         </div>
                                     </div>
